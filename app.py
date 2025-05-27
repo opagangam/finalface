@@ -174,7 +174,7 @@ with gr.Blocks() as iface:
     submit = gr.Button("Analyse")
     submit.click(fn=process, inputs=[file_input], outputs=output)
 
-iface.launch(share=True)
+iface.launch(server_name="0.0.0.0", server_port=7860)
 
 def go_through_folder():
     if not os.path.isdir(media_dir):
