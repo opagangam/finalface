@@ -1,0 +1,18 @@
+name: faceapp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pillow
+  - opencv
+  - dlib=19.24
+  - face_recognition
+  - matplotlib
+  - pandas
+  - pip
+  - pip:
+      - gradio==4.26.0
+      - mediapipe==0.10.21
+      - sentencepiece
